@@ -1,0 +1,4 @@
+name: DragonHeart
+version: ${project.version}
+main: dev.failures.main.DragonHeart
+api-version: 1.16

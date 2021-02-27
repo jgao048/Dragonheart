@@ -300,4 +300,17 @@ public class PDUtils {
         setItemDataFloat(item, finalValue);
         item.setItemMeta(meta);
     }
+
+    public boolean itemDataContainsKey(ItemStack item){
+        if(item == null) return false;
+        ItemMeta meta = item.getItemMeta();
+        if(meta == null) return false;
+        PersistentDataContainer itemData = meta.getPersistentDataContainer();
+        return itemData.getKeys().contains(key);
+    }
+
+    public boolean playerDataContainsKey(Player player){
+        PersistentDataContainer playerData = player.getPersistentDataContainer();
+        return playerData.getKeys().contains(key);
+    }
 }

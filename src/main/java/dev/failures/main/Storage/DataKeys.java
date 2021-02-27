@@ -4,5 +4,5 @@ import dev.failures.main.DragonHeart;
 import org.bukkit.NamespacedKey;
 
 public class DataKeys {
-    public static NamespacedKey partyKey = new NamespacedKey(DragonHeart.getInstance(), "party");
+    public static NamespacedKey STR_KEY = new NamespacedKey(DragonHeart.getInstance(), "statStrength");
 }
